@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <form class="search-form" id="search-form">
+      <input
+        class="input"
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button class="button" type="submit" name="button">
+        <img class="icon" src="./images/search.svg" alt="search" width="15" />
+      </button>
+    </form>
+    <div class="gallery"></div>
+    <div class="stt stt__circle__black"></div>
+    <img class="visually-hidden" alt="loading" src="./images/loader.gif" />
     <include src="./partials/example.html"></include>
+    <script type="module" src="./index.js"></script>
+    <script src="./scrollToTop-min.js"></script>
   </body>
 </html>
